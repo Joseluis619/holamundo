@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae - José Luis Rodríguez</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            background-color: #DFD0B8;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: #FFF;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 300px;
+            background: #5AB2FF;
+            color: #FFF;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .sidebar h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .sidebar img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .sidebar .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            background-color: #CAF4FF;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #5AB2FF;
+            padding: 10px;
+            margin: 0;
+            font-size: 1.5em;
+            cursor: pointer;
+            background: #A0DEFF;
+            border-radius: 5px;
+            color: #FFF;
+        }
+        .section-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #eaeaea;
+            background: #FFF;
+            border-radius: 0 0 5px 5px;
+            color: #333;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills-list li {
+            background: #5AB2FF;
+            color: #FFF;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .skills-list li:hover {
+            background: #A0DEFF;
+        }
+        .project, .experience {
+            margin-bottom: 15px;
+        }
+        .project-title, .experience-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+        .project-description, .experience-description {
+            color: #555;
+            font-size: 1em;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>José Luis Rodríguez Ramírez</h1>
+            <img src="C:\Users\magos\OneDrive\Documentos\Batiz\German\yo.png" alt="Foto">
+            <div class="contact-info">
+                <p><strong>Email:</strong> jrodriguezramirez180@gmail.com</p>
+                <p><strong>Teléfono:</strong> 5618837126</p>
+                <p><strong>Ubicación:</strong> México, Estado de México</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="section">
+                <h2 onclick="toggleSection(this)">Información Personal</h2>
+                <div class="section-content">
+                    <p><strong>Edad:</strong> 17 años</p>
+                    <p><strong>Fecha de Nacimiento:</strong> Febrero, 2007</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 onclick="toggleSection(this)">Educación</h2>
+                <div class="section-content">
+                    <p><strong>Preparatoria:</strong> Cursando el 5to semestre en la especialidad en técnico en programación.</p>
+                    <p><strong>Institución:</strong>Centro de Estudios Científicos y Tecnologicos 9 "Juan de Dios Bátiz". </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 onclick="toggleSection(this)">Experiencia</h2>
+                <div class="section-content">
+                    <div class="experience">
+                        <p class="experience-title"><strong>Puesto:</strong>Lider de analísis</p>
+                        <p class="experience-description"><strong>Empresa:</strong> Florida  </p>
+                        <p class="experience-description">Mi tarea es analizar  y priorizar los requisitos del sistema para garantizar su 				alineación con los objetivos del proyecto, asegurando que los recursos se asignen de manera efectiva.</p>
+                    </div>
+                    <!-- Agrega más experiencias si las tienes -->
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 onclick="toggleSection(this)">Proyectos</h2>
+                <div class="section-content">
+                    <div class="project">
+                        <p class="project-title"><strong>Proyecto 1:</strong> The day</p>
+                        <p class="project-description">Es un software que sirve para agregar tus tareas y tus pendientes a un calendario para poder tener todo de una manera más organizada, yo me encargué del diseño y parte de la programación, para esto se utilizó programación estructurada utilizando Java.</p>
+                    </div>
+                    <div class="project">
+                        <p class="project-title"><strong>Proyecto 2:</strong >Stockity</p>
+                        <p class="project-description">Es una pagína web la cual sirve para le gestion de inventario, en esta me encargue del diseñó y de diferentes modulos de la pagina como lo son el registro de productos y el login, para ello se utilizó el IDE netbeans para la codificación en HTML </p>
+                    </div>
+                    <!-- Agrega más proyectos si es necesario -->
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 onclick="toggleSection(this)">Habilidades</h2>
+                <div class="section-content">
+                    <ul class="skills-list">
+                        <li>Creación de ideas</li>
+                        <li>Desarrollo de bases de datos</li>
+                        <li>Creación de documentación</li>
+                        <li>Trabajo en equipo</li>
+                                                                   </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 onclick="toggleSection(this)">Idiomas</h2>
+                <div class="section-content">
+                    <p><strong>Español:</strong> Nativo</p>
+                    <p><strong>Inglés:</strong> Nivel elemental</p>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 José Luis Rodríguez - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
